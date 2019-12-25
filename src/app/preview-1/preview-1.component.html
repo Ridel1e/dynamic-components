@@ -1,0 +1,25 @@
+<div class="drawer">
+  <ng-container #container></ng-container>
+</div>
+
+<div class="ctrl-panel">
+  <mat-form-field appearance="outline">
+    <input [formControl]="ctrl" type="text" matInput>
+    <mat-label>Name</mat-label>
+  </mat-form-field>
+
+  <br>
+
+  <button (click)="createComponent()" mat-flat-button color="primary" type="button">
+    Create Component
+  </button>
+
+  <button (click)="destroyComponent()" mat-flat-button color="warn" type="button">
+    Destroy Component
+  </button>
+
+  <button (click)="clearContainer()" mat-stroked-button color="warn" type="button">
+    Clear Container
+  </button>
+</div>
+

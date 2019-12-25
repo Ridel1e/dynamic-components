@@ -1,0 +1,25 @@
+<div class="drawer">
+  <ng-container #container></ng-container>
+</div>
+<div class="ctrl-panel">
+  <button (click)="createComponent(staticNode)" mat-flat-button color="primary" type="button">
+    Static children
+  </button>
+
+  <button (click)="createComponent(dynamicNodes)" mat-flat-button color="primary" type="button">
+    Component children
+  </button>
+
+  <button (click)="clearContainer()" mat-stroked-button color="warn" type="button">
+    Clear Container
+  </button>
+</div>
+
+<ng-template #staticNode>
+  <div>test 123</div>
+  <div>test 456</div>
+</ng-template>
+
+<ng-template #dynamicNodes>
+  <app-child something="hey hey"></app-child>
+</ng-template>

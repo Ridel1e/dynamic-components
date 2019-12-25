@@ -1,0 +1,12 @@
+
+:host {
+  display: block;
+  padding: 1rem;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, .07);
+
+  > * {
+    margin-bottom: 1rem;
+  }
+}
+

@@ -1,0 +1,8 @@
+button:not(:last-of-type) {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.drawer {
+  min-height: 100px;
+}

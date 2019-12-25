@@ -1,0 +1,13 @@
+<div class="drawer">
+  <ng-container #container></ng-container>
+</div>
+
+<div class="ctrl-panel">
+  <button (click)="asyncModule()" mat-flat-button color="primary" type="button">
+    Lazy Module Component
+  </button>
+
+  <button (click)="syncModule()" mat-stroked-button color="warn" type="button">
+    Sync Module Component
+  </button>
+</div>

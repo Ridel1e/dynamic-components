@@ -1,0 +1,9 @@
+.drawer {
+  min-height: 100px;
+}
+
+
+button:not(:last-child), mat-form-field:not(:last-child) {
+  display: inline-block;
+  margin-right: 1rem;
+}
